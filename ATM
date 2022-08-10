@@ -1,0 +1,9 @@
+
+(withdraw,balance)=map(str,input().split())
+withdraw=int(withdraw)
+balance=float(balance)
+if(withdraw%5==0 and balance>withdraw ):
+    print('%.2f' % (balance-withdraw-.500))
+else:
+    print('%.2f' % balance)
+    
