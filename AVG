@@ -1,0 +1,15 @@
+for i in range(int(input())):
+    n,k,v = map(int, input().split())
+    N = list(map(int,input().split()))[:n]
+    
+    total = (n+k)*v
+    sum = 0
+    for i in range(len(N)):
+        sum = sum+N[i]
+    if(sum>total):
+        print(-1)
+    else:
+        if(((total-sum)/k)%2==0 or ((total-sum)/k)%2==1 ):
+            print((total-sum)//k)
+        else:
+            print(-1)
