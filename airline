@@ -1,0 +1,15 @@
+
+n=int(input())
+for i in range(n):
+    a,b,c,d,e=map(int,input().split())
+    a1=a+b
+    a2=b+c
+    a3=a+c
+    if (a1<=d) and (c<=e):
+        print("Yes")
+    elif (a2<=d) and (a<=e):
+        print("Yes")
+    elif (a3<=d) and (b<=e):
+        print("Yes")
+    else:
+        print("No")
