@@ -1,0 +1,15 @@
+
+for i in range(int(input())):
+    N,K = map(int ,input().split())
+    if(N<K):
+        print("NO")
+    elif(N==K):
+        if(N==1 and K==1):
+            print("YES")
+        else:
+            print("NO")
+    else:
+        if(N>=(K*(K+1)/2)):
+            print("YES")
+        else:
+            print("NO")
